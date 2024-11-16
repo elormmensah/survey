@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Feedback Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Clothing Feedback Survey</h1>
+    <p id="description">We value your feedback! Please fill out this form to help us improve our clothing line.</p>
+  </header>
+  
+  <form id="survey-form">
+    <!-- Name Input -->
+    <label id="name-label" for="name">Name:</label>
+    <input 
+      id="name" 
+      type="text" 
+      name="name" 
+      placeholder="Enter your name" 
+      required>
+    
+    <!-- Email Input -->
+    <label id="email-label" for="email">Email:</label>
+    <input 
+      id="email" 
+      type="email" 
+      name="email" 
+      placeholder="Enter your email" 
+      required>
+    
+    <!-- Number Input -->
+    <label id="number-label" for="number">Age:</label>
+    <input 
+      id="number" 
+      type="number" 
+      name="age" 
+      placeholder="Enter your age" 
+      min="18" 
+      max="100" 
+      required>
+
+    <!-- Dropdown -->
+    <label for="dropdown">How often do you shop for clothes?</label>
+    <select id="dropdown" name="frequency" required>
+      <option value="" disabled selected>Select an option</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="rarely">Rarely</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>What is your preferred type of clothing?</p>
+    <label>
+      <input 
+        type="radio" 
+        name="clothing-type" 
+        value="casual" 
+        required> 
+      Casual
+    </label>
+    <label>
+      <input 
+        type="radio" 
+        name="clothing-type" 
+        value="formal"> 
+      Formal
+    </label>
+    <label>
+      <input 
+        type="radio" 
+        name="clothing-type" 
+        value="sportswear"> 
+      Sportswear
+    </label>
+
+    <!-- Checkboxes -->
+    <p>What do you consider when buying clothes? (Check all that apply)</p>
+    <label>
+      <input 
+        type="checkbox" 
+        name="considerations" 
+        value="price"> 
+      Price
+    </label>
+    <label>
+      <input 
+        type="checkbox" 
+        name="considerations" 
+        value="style"> 
+      Style
+    </label>
+    <label>
+      <input 
+        type="checkbox" 
+        name="considerations" 
+        value="quality"> 
+      Quality
+    </label>
+    <label>
+      <input 
+        type="checkbox" 
+        name="considerations" 
+        value="brand"> 
+      Brand
+    </label>
+
+    <!-- Textarea -->
+    <label for="comments">Additional Comments:</label>
+    <textarea 
+      id="comments" 
+      name="comments" 
+      placeholder="Share your thoughts about our clothing line..."></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
